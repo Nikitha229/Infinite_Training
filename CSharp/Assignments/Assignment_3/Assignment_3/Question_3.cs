@@ -47,13 +47,13 @@ namespace Assignment_3
             Console.WriteLine("Enter Sales Details:");
             Console.Write("Enter SaleNo: ");
             int salno = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter ProductNo: ");
+            Console.Write("Enter ProductNo: ");
             int productno=Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter Price: ");
+            Console.Write("Enter Price: ");
             int price = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter DateOfSale: ");
+            Console.Write("Enter DateOfSale: ");
             DateTime dos = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Enter Quantity: ");
+            Console.Write("Enter Quantity: ");
             int qty = Convert.ToInt32(Console.ReadLine());
 
             SaleDetails s = new SaleDetails(salno, productno, price, dos, qty);
