@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\bin\Debug\Day6_Task.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\bin\Debug\Day6_Task.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\bin\Debug\Day6_Task.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\obj\Debug\Day6_Task.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\obj\Debug\Day6_Task.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\obj\Debug\Day6_Task.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\Day6_Task\Day6_Task\obj\Debug\Day6_Task.pdb
