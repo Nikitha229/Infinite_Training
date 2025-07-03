@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge_2
 {
-    /*Create a Class called Products with Productid, Product Name, Price. Accept 10 Products, sort them based on the price, and display the sorted Products*/
+    /*2. Create a Class called Products with Productid, Product Name, Price. Accept 10 Products, sort them based on the price, and display the sorted Products*/
 
     class Product
     {

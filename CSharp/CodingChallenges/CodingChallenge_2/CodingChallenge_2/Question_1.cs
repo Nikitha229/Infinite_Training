@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge_2
 {
-/*Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which takes grade as an input and checks whether student passed the course or not.  
+/*1. Create an Abstract class Student with  Name, StudentId, Grade as members and also an abstract method Boolean Ispassed(grade) which takes grade as an input and checks whether student passed the course or not.  
  Create 2 Sub classes Undergraduate and Graduate that inherits all members of the student and overrides Ispassed(grade) method For the UnderGrad class, if the grade is above 70.0, then isPassed returns true, otherwise it returns false. For the Grad class, if the grade is above 80.0, then isPassed returns true, otherwise returns false.
  Test the above by creating appropriate objects*/
 
