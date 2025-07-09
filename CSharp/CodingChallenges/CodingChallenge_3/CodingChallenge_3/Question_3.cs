@@ -7,6 +7,8 @@ using System.IO;
 
 namespace CodingChallenge_3
 {
+    //3. Write a program in C# Sharp to append some text to an existing file. If file is not available, then create one in the same workspace.
+    //Hint: (Use the appropriate mode of operation.Use stream writer class)
     class Question_3
     {
         static void WriteStream()

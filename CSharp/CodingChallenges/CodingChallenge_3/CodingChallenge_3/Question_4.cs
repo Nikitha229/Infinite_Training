@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge_3
 {
+     //4. Write a console program that uses delegate object as an argument to call Calculator Functionalities like 1. Addition, 2. Subtraction and 3. Multiplication
+     //by taking 2 integers and returning the output to the user. You should display all the return values accordingly.
+
     public delegate int CalculatorDelegate(int num1, int num2);
     class Question_4
     {

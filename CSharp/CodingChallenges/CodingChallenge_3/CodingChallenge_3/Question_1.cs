@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge_3
 {
-    //Question-1: Write a program to find the Sum and the Average points scored by the teams in the IPL. Create a Class called CricketTeam that has a function called Pointscalculation(int no_of_matches) that takes no.of matches as input and accepts that many scores from the user. The function should then return the Count of Matches, Average and Sum of the scores.
+    //Question-1: Write a program to find the Sum and the Average points scored by the teams in the IPL.
+    //Create a Class called CricketTeam that has a function called Pointscalculation(int no_of_matches) that takes no.of matches as input and accepts that many scores from the user.
+    //The function should then return the Count of Matches, Average and Sum of the scores.
     class CricketTeam
     {
         public void Pointscalculation(int no_of_matches)

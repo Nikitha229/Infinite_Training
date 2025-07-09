@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace CodingChallenge_3
 {
-    using System;
-
+    //2. Write a class Box that has Length and breadth as its members.Write a function that adds 2 box objects and stores in the 3rd.Display the 3rd object details. Create a Test class to execute the above
     public class Box
     {
         public double Length;
