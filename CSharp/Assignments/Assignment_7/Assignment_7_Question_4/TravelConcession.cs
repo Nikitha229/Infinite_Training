@@ -16,7 +16,7 @@ namespace Assignment_7_Question_4
             }
             else if (age > 60)
             {
-                double concessionFare = TotalFare * 0.7; // 30% concession
+                double concessionFare =TotalFare*0.7;
                 return $"Senior Citizen - Fare: {concessionFare}";
             }
             else

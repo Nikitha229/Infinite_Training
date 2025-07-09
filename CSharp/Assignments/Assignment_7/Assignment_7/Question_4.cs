@@ -19,8 +19,8 @@ namespace Assignment_7
             double TotalFare = double.Parse(Console.ReadLine());
 
             Assignment_7_Question_4.TravelConcession travelConcession = new TravelConcession();
-            string result = travelConcession.CalculateConcession(Age, TotalFare);
-            Console.WriteLine($"Hello {Name}, {result}");
+            string res=travelConcession.CalculateConcession(Age,TotalFare);
+            Console.WriteLine($"Hello {Name}, {res}");
             Console.Read();
         }
      }
