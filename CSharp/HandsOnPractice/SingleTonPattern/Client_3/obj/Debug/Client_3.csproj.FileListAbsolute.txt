@@ -1,0 +1,11 @@
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\Client_3.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\Client_3.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\Client_3.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\SingleTonPattern.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\SingleTonPattern.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\bin\Debug\SingleTonPattern.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\obj\Debug\Client_3.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\obj\Debug\Client_3.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\obj\Debug\Client_3.csproj.CopyComplete
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\obj\Debug\Client_3.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\Client_3\obj\Debug\Client_3.pdb

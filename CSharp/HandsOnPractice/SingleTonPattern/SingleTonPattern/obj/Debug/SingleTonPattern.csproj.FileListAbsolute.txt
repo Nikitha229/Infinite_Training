@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\bin\Debug\SingleTonPattern.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\bin\Debug\SingleTonPattern.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\bin\Debug\SingleTonPattern.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\obj\Debug\SingleTonPattern.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\obj\Debug\SingleTonPattern.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\obj\Debug\SingleTonPattern.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonPattern\SingleTonPattern\obj\Debug\SingleTonPattern.pdb
