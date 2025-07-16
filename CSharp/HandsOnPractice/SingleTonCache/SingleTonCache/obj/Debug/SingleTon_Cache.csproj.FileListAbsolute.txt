@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\bin\Debug\SingleTonCache.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\bin\Debug\SingleTonCache.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\bin\Debug\SingleTonCache.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\obj\Debug\SingleTon_Cache.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\obj\Debug\SingleTon_Cache.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\obj\Debug\SingleTonCache.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\SingleTonCache\SingleTonCache\obj\Debug\SingleTonCache.pdb

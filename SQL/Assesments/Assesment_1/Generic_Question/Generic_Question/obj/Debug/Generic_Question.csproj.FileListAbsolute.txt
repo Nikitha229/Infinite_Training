@@ -1,0 +1,7 @@
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\bin\Debug\Generic_Question.exe.config
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\bin\Debug\Generic_Question.exe
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\bin\Debug\Generic_Question.pdb
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\obj\Debug\Generic_Question.csproj.AssemblyReference.cache
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\obj\Debug\Generic_Question.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\obj\Debug\Generic_Question.exe
+C:\Infinite-Training\SQL\Assesments\Assesment_1\Generic_Question\Generic_Question\obj\Debug\Generic_Question.pdb

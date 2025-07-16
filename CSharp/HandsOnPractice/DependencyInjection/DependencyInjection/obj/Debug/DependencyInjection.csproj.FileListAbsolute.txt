@@ -1,0 +1,7 @@
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\bin\Debug\DependencyInjection.exe.config
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\bin\Debug\DependencyInjection.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\bin\Debug\DependencyInjection.pdb
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\obj\Debug\DependencyInjection.csproj.AssemblyReference.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\obj\Debug\DependencyInjection.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\obj\Debug\DependencyInjection.exe
+C:\Infinite-Training\CSharp\HandsOnPractice\DependencyInjection\DependencyInjection\obj\Debug\DependencyInjection.pdb
