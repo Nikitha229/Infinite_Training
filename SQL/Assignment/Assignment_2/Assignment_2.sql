@@ -107,4 +107,5 @@ select ename,salary from emp where salary not between 1500 and 2850
 
 --Query-15:Find all managers who have more than 2 employees reporting to them
 
-select mgr_id,count(mgr_id) as no_of_employees from emp where mgr_id!=null group by mgr_id having count(mgr_id)>2
+select  e.mgr_id as manager_id,m.ename as manager_name,count(*) as num_of_employees from emp e join emp m on e.mgr_id = m.empno group by e.mgr_id, m.ename having count(*) > 2;
+
