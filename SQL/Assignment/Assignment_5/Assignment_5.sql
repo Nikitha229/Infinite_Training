@@ -71,6 +71,5 @@ begin
 end
 
 update Employees set ename='Ramesh' where empno=7002
-insert into Holidays values('2025-07-24','Health_care_day')
 
 select * from Employees
