@@ -45,3 +45,32 @@ exec SP_Payslip 7003
 --2.  Create a trigger to restrict data manipulation on EMP table during General holidays. Display the error message 
 --like “Due to Independence day you cannot manipulate data” or "Due To Diwali", you cannot manipulate" etc
 --Note: Create holiday table with (holiday_date,Holiday_name). Store at least 4 holiday details. try to match and stop manipulation 
+
+create table Holidays(HolidayDate date,HolidayName varchar(50))
+
+insert into Holidays values('2025-08-15','Independence Day'),
+('2025-08-27','Ganesh Chathurti'),
+('2025-10-25','Diwali'),
+('2025-01-01','New Year')
+
+create or alter trigger tr_restrict_on_holiday
+on employees
+for insert, update, delete
+as
+begin
+    declare @today date = cast(getdate() as date)
+    declare @holidayname varchar(50)
+
+    select @Holidayname=Holidayname from Holidays where holidaydate = @today
+
+    if(@holidayname is not null)
+    begin
+        print 'due to '+@holidayname + ', you cannot manipulate data.'
+        rollback transaction;
+    end
+end
+
+update Employees set ename='Ramesh' where empno=7002
+insert into Holidays values('2025-07-24','Health_care_day')
+
+select * from Employees
