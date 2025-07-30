@@ -1,0 +1,7 @@
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\bin\Debug\ADO_Assesment_1.exe.config
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\bin\Debug\ADO_Assesment_1.exe
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\bin\Debug\ADO_Assesment_1.pdb
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\obj\Debug\ADO_Assesment_1.csproj.AssemblyReference.cache
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\obj\Debug\ADO_Assesment_1.csproj.CoreCompileInputs.cache
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\obj\Debug\ADO_Assesment_1.exe
+C:\Infinite-Training\ADO and LINQ\Assesments\Assesment_1\ADO_Assesment_1\ADO_Assesment_1\obj\Debug\ADO_Assesment_1.pdb

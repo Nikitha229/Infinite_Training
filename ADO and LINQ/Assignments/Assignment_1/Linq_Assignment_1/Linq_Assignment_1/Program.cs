@@ -17,7 +17,6 @@ namespace Linq_Assignment_1
         public DateTime DOJ { get; set; }
         public string City { get; set; }
 
-
     }
 
     class Program
