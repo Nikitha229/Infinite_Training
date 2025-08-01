@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>
+    </title>
+    <style>
+        .container {
+            position: relative;
+            width: 300px;
+        }
+        .container img 
+        {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .overlay{
+            position:absolute;
+            top:0;
+            bottom:0;
+            left:0;
+            right:0;
+            height:100%;
+            width:100%;
+            opacity:0;
+            transition:.5s ease;
+            justify-content:center;
+            align-items:center;
+            display:flex;
+            background-color:darkblue;
+        }
+        .container:hover .overlay{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img  src="C:\Infinite-Training\Web Technologies\HTML\Assignments\Assignment_2\Assignment_2\image-1.jpg" />
+        <div class="overlay">
+            <p style="color:white">Hello!!</p>
+        </div>
+    </div>
+</body>
+</html>
+
