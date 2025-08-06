@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Style h1 in div</title>
+</head>
+<body>
+
+    <div>
+        <h1>This h1 in div</h1>
+        <h1>These should be styled</h1>
+        <p>Paragraph in div</p>
+    </div>
+    <h1>This h1 out of div</h1>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('div > h1').css('background-color', 'pink');
+        });
+    </script>
+
+</body>
+</html>

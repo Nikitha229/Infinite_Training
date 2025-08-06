@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 350px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+            input:focus, select:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+
+            input[type="submit"] {
+                background-color: #007bff;
+                color: white;
+                border: none;
+                cursor: pointer;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+                input[type="submit"]:hover {
+                    background-color: #0056b3;
+                }
+
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function FormValidator() {
+            var isValid = true;
+
+            var firstname = document.getElementById('firstname');
+            var addr = document.getElementById('addr');
+            var zip = document.getElementById('zip');
+            var state = document.getElementById('state');
+            var username = document.getElementById('username');
+            var email = document.getElementById('email');
+
+            clearErrors();
+
+            if (!isAlphabet(firstname, "Please enter only Characters for Name")) isValid = false;
+            if (!isAlphaNumeric(addr, "Address can have only characters and numbers.")) isValid = false;
+            if (!isNumeric(zip, "Please enter valid 6 digits number")) isValid = false;
+            if (!madeSelection(state, "Please choose a state from the list")) isValid = false;
+            if (!lengthRestriction(username, 6, 12)) isValid = false;
+            if (!emailValidate(email, "Please enter email in correct format")) isValid = false;
+
+            return isValid;
+        }
+
+        function showError(elem, message) {
+            var errorElem = document.getElementById(elem.id + '-error');
+            errorElem.innerText = message;
+            errorElem.style.display = 'block';
+        }
+
+        function clearErrors() {
+            var errors = document.getElementsByClassName('error-message');
+            for (var i = 0; i < errors.length; i++) {
+                errors[i].style.display = 'none';
+            }
+        }
+
+        function isNumeric(elem, helpmsg) {
+            var numericexpr = /^[0-9]{6}$/;
+            if (elem.value.match(numericexpr)) {
+                return true;
+            } else {
+                showError(elem, helpmsg);
+                return false;
+            }
+        }
+
+        function isAlphabet(elem, helpmsg) {
+            var alphaexpr = /^[a-zA-Z]+$/;
+            if (elem.value.match(alphaexpr)) {
+                return true;
+            } else {
+                showError(elem, helpmsg);
+                return false;
+            }
+        }
+
+        function isAlphaNumeric(elem, helpmsg) {
+            var alphanum = /^[0-9a-zA-Z\s]+$/;
+            if (elem.value.match(alphanum)) {
+                return true;
+            } else {
+                showError(elem, helpmsg);
+                return false;
+            }
+        }
+
+        function lengthRestriction(elem, min, max) {
+            var uname = elem.value;
+            if (uname.length >= min && uname.length <= max) {
+                return true;
+            } else {
+                showError(elem, "User name to be between " + min + " and " + max + " characters only");
+                return false;
+            }
+        }
+
+        function madeSelection(elem, helpmsg) {
+            if (elem.value == "Choose State") {
+                showError(elem, helpmsg);
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function emailValidate(elem, helpmsg) {
+            var emailexpr = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-Z]{2,4}$/;
+            if (elem.value.match(emailexpr)) {
+                return true;
+            } else {
+                showError(elem, helpmsg);
+                return false;
+            }
+        }
+    </script>
+
+    <form onsubmit="return FormValidator()">
+        First Name: <input type="text" id="firstname" />
+        <div id="firstname-error" class="error-message"></div>
+
+        Address: <input type="text" id="addr" />
+        <div id="addr-error" class="error-message"></div>
+
+        Zip Code: <input type="text" id="zip" />
+        <div id="zip-error" class="error-message"></div>
+
+        State:
+        <select id="state">
+            <option>Choose State</option>
+            <option>Andhra Pradesh</option>
+            <option>Karnataka</option>
+            <option>Tamil Nadu</option>
+            <option>Uttar Pradesh</option>
+        </select>
+        <div id="state-error" class="error-message"></div>
+
+        User Name: <input type="text" id="username" />
+        <div id="username-error" class="error-message"></div>
+
+        Email: <input type="text" id="email" />
+        <div id="email-error" class="error-message"></div>
+
+        <input type="submit" value="Validate Form" />
+    </form>
+</body>
+</html>

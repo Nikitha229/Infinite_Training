@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Prepend in Jquery</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.4.1.min.js"></script>
+    <script>
+        var i = 0;
+        $(document).ready(function () {
+            $("li").each(function (i) {
+                $(this).prepend(i + " ");
+                i++;
+            });
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li>CSharp</li>
+        <li>SQL</li>
+        <li>ADO</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>Jquery</li>
+    </ul>
+</body>
+</html>

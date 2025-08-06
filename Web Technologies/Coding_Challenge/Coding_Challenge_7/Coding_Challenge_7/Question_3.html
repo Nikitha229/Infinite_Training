@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Button Click Event</title>
+</head>
+<body>
+    <h2>Click the Button</h2>
+    <button id="btn">Click Me!</button>
+    <p id="msg"></p>
+    <script>
+        const button = document.getElementById("btn");
+        const msg = document.getElementById("msg");
+
+        button.addEventListener("click", function () {
+            console.log("Coding Challenge 7");
+            msg.innerHTML = "Button Clicked!!";
+        });
+    </script>
+</body>
+</html>
+
