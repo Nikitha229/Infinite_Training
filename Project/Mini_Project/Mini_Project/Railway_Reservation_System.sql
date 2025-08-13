@@ -7,9 +7,12 @@ CustomerId int primary key identity,
 CustomerName varchar(50),
 phone varchar(10),
 Email varchar(80),
+password varchar(30)
 )
 
 select * from Customer
+
+drop table Customer;
 
   create table Trains
   (
@@ -17,6 +20,7 @@ select * from Customer
    TrainName varchar(80),
    Source varchar(30),
    Destination Varchar(30),
+   inActive bit
   )
 
   select * from Trains
@@ -38,6 +42,8 @@ create table Reservation
   foreign key (CustomerId) references Customer(CustomerId)
  )
 
+ drop table Reservation
+
  select * from Reservation
 
 create table Passenger (
@@ -55,6 +61,8 @@ create table Passenger (
 	Cost float
 )
 
+drop table Passenger
+
 select * from Passenger
 
 create table Cancellation
@@ -66,6 +74,8 @@ create table Cancellation
  CancellationDate date
  )
 
+
+ drop table Cancellation
 
  select * from Cancellation
 
@@ -85,12 +95,16 @@ values
 (12861, 'Link Daksin Express', 'Visakhapatnam', 'Raipur'),
 (12711, 'Pinakini Express', 'Vijayawada', 'Chennai'),
 (17488, 'Tirumala Express', 'Visakhapatnam', 'Tirupati'),
+(18702,'Puri Tirupati Express','Visakhapatnam','Tirupati'),
 (12718, 'Ratnachal Express', 'Vijayawada', 'Visakhapatnam'),
 (12805, 'Janmabhoomi Express', 'Lingampalli', 'Visakhapatnam'),
 (18519, 'Visakhapatnam - Lokmanya Tilak Express', 'Visakhapatnam', 'Mumbai'),
 (17230, 'Sabari Express', 'Secunderabad', 'Thiruvananthapuram'),
 (12739, 'Vishaka Express', 'Secunderabad', 'Visakhapatnam')
 
+select * from Trains
+
+drop table Trains
 insert into TrainClasses 
 values
 (12727, 'Sleeper', 120, 450),
@@ -102,6 +116,7 @@ values
 (12711, 'Sleeper', 100, 500),
 (12711, '2AC', 70, 1000),
 (12711, 'Chair Car', 100, 600),
+(17488,'Sleeper',150,450),
 (17488, '2AC', 120, 950),
 (17488, '3AC', 80, 1350),
 (12718, 'AC Chair Car', 90, 700),
@@ -114,8 +129,16 @@ values
 (17230, 'Sleeper', 130, 650),
 (17230, '2AC', 80, 950),
 (12739, 'Sleeper', 110, 500),
-(12739, '2AC', 110, 700)
+(12739, '2AC', 110, 700),
+(18702,'Sleeper',100,650),
+(18702,'2AC',80,900),
+(18702,'3AC',60,1150)
 
+
+alter table Trains ADD IsActive bit DEFAULT 1;
+
+update Trains set IsActive=1 
 select * from TrainClasses
+
 
 select * from Reservation

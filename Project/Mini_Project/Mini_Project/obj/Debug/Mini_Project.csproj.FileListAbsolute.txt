@@ -1,7 +1,15 @@
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe.config
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Mini_Project.exe
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Mini_Project.pdb
-C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.AssemblyReference.cache
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.CoreCompileInputs.cache
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.exe
 C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.pdb
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Castle.Core.dll
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Moq.dll
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\Castle.Core.xml
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.CopyComplete
+C:\Infinite-Training\Project\Mini_Project\Mini_Project\obj\Debug\Mini_Project.csproj.AssemblyReference.cache
