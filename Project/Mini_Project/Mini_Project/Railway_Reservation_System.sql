@@ -23,7 +23,7 @@ drop table Customer;
    inActive bit
   )
 
-  select * from Trains
+
 
 create table Reservation
 (
@@ -63,7 +63,7 @@ create table Passenger (
 
 drop table Passenger
 
-select * from Passenger
+
 
 create table Cancellation
 (
@@ -77,7 +77,7 @@ create table Cancellation
 
  drop table Cancellation
 
- select * from Cancellation
+
 
  create table TrainClasses
  (
@@ -87,7 +87,7 @@ create table Cancellation
   Cost_Per_Seat float
   )
 
-  select * from TrainClasses
+
 
 insert into Trains (TrainNo, TrainName, Source, Destination)
 values
@@ -135,10 +135,9 @@ values
 (18702,'3AC',60,1150)
 
 
-alter table Trains ADD IsActive bit DEFAULT 1;
-
-update Trains set IsActive=1 
-select * from TrainClasses
-
-
+select * from Customer
 select * from Reservation
+select * from Cancellation
+select * from Passenger
+select * from Trains
+select * from TrainClasses

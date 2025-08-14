@@ -15,8 +15,12 @@ namespace Mini_Project
             string name = Console.ReadLine();
 
             Console.Write("Enter phone number: ");
-            string phone = Console.ReadLine();
-
+            decimal phone = Convert.ToInt64(Console.ReadLine());
+            while (Convert.ToString(phone).Length != 10)
+            {
+                Console.Write("Entered Invalid phone no,Enter valid Phone no: ");
+                phone = Convert.ToInt64(Console.ReadLine());
+            }
             Console.Write("Enter email: ");
             string email = Console.ReadLine();
 

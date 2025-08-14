@@ -35,15 +35,30 @@ namespace Mini_Project.Admin1
 
             using (SqlConnection conn = Connection.getconnection())
             {
-                string query = "UPDATE Trains SET IsActive = 0 WHERE TrainNo = @TrainNo";
-                SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@TrainNo", trainNo);
+                SqlCommand cd = new SqlCommand($"select passengerid from passenger where trainno={trainNo}",conn);
+                SqlDataReader read = cd.ExecuteReader();
+                int c = 0;
+                while(read.Read())
+                {
+                    c++;
+                }
+                read.Close();
+                if (c == 0)
+                {
+                    string query = "UPDATE Trains SET IsActive = 0 WHERE TrainNo = @TrainNo";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@TrainNo", trainNo);
 
-                int rowsAffected = cmd.ExecuteNonQuery();
-                if (rowsAffected > 0)
-                    Console.WriteLine("Train deactivated successfully.");
+                    int rowsAffected = cmd.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                        Console.WriteLine("Train deactivated successfully.");
+                    else
+                        Console.WriteLine("Train not found or already inactive.");
+                }
                 else
-                    Console.WriteLine("Train not found or already inactive.");
+                {
+                    Console.WriteLine("Cannot deactivate this train, there are passengers booked for this train");
+                }
             }
         }
     }

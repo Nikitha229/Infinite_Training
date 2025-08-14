@@ -25,7 +25,7 @@ namespace Mini_Project
                 join Reservation r on p.BookingId = r.BookingId
                 join TrainClasses tc ON r.TrainNo = tc.TrainNo and r.Class = tc.Class
                 where r.CustomerId = @CustomerId 
-                and r.DateOfJourney > GETDATE()
+                and r.DateOfJourney >= GETDATE()
                 and p.Status != 'Cancelled'";
 
                 SqlCommand cmd = new SqlCommand(query, con);
@@ -62,6 +62,10 @@ namespace Mini_Project
                 reader.Close();
             }
             catch (SqlException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            catch(Exception ex)
             {
                 Console.WriteLine("Error: " + ex.Message);
             }

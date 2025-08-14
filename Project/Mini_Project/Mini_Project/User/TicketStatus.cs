@@ -42,6 +42,10 @@ namespace Mini_Project
             {
                 Console.WriteLine("Error: " + ex.Message);
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
         }
     }
 }

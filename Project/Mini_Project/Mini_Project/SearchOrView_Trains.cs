@@ -40,7 +40,7 @@ namespace Mini_Project
         {
             using (SqlConnection conn = Connection.getconnection())
             {
-                string query = @"SELECT T.TrainNo, T.TrainName,T.Source,T.Destination, TC.Class, TC.Available_Seats, TC.Cost_Per_Seat
+                string query = @"SELECT T.TrainNo, T.TrainName,T.Source,T.Destination, TC.Class, TC.Available_Seats, TC.Cost_Per_Seat,T.isactive
                          FROM Trains T
                          JOIN TrainClasses TC ON T.TrainNo = TC.TrainNo where T.isactive=1
                          ORDER BY T.TrainNo";
@@ -55,16 +55,22 @@ namespace Mini_Project
                 {
                     int trainNo = Convert.ToInt32(reader["TrainNo"]);
                     string trainName = reader["TrainName"].ToString();
-
+                    string status = "";
+                    if (Convert.ToInt32(reader["isactive"]) == 1)
+                        status = "Active";
+                    else
+                    {
+                        status = "Not-Active";
+                    }
                     if (trainNo != currentTrainNo)
                     {
                         currentTrainNo = trainNo;
                         currentTrainName = trainName;
 
-                        Console.WriteLine($"\nTrain No: {trainNo} - {trainName} (Source - {reader["Source"]} Destination - {reader["Destination"]})");
-                        Console.WriteLine("----------------------------------------------------------------------------------------------------------------");
+                        Console.WriteLine($"\nTrain No: {trainNo} - {trainName} (Source - {reader["Source"]} Destination - {reader["Destination"]}  ({status})");
+                        Console.WriteLine("-----------------------------------------------------------");
                         Console.WriteLine("Class\tAvailable Seats\t\tFare");
-                        Console.WriteLine("----------------------------------------------------------------------------------------------------------------");
+                        Console.WriteLine("-----------------------------------------------------------");
 
                     }
 

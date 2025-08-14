@@ -131,9 +131,14 @@ namespace Mini_Project
                         Console.Write("Name: ");
                         string name = Console.ReadLine();
                         Console.Write("Phone: ");
-                        string phone = Console.ReadLine();
+                        decimal phone =Convert.ToInt64( Console.ReadLine());
+                        while(Convert.ToString(phone).Length!=10)
+                        {
+                            Console.Write("Entered Invalid phone no,Enter valid Phone no: ");
+                            phone = Convert.ToInt64(Console.ReadLine());
+                        }
                         Console.Write("Adhar Number: ");
-                        string adhar = Console.ReadLine();
+                        decimal adhar =Convert.ToUInt64( Console.ReadLine());
                         Console.Write("Gender: ");
                         string gender = Console.ReadLine();
                         string berth = berths[rand.Next(berths.Length)];
@@ -174,6 +179,10 @@ namespace Mini_Project
                     Console.WriteLine("Status: Ticket Booked");
                 }
                 catch (SqlException ex)
+                {
+                    Console.WriteLine("Error: " + ex.Message);
+                }
+                catch(Exception ex)
                 {
                     Console.WriteLine("Error: " + ex.Message);
                 }

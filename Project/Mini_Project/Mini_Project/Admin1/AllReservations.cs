@@ -23,13 +23,13 @@ namespace Mini_Project.Admin1
 
                     Console.WriteLine("\n--- All Reservations ---\n");
                     Console.WriteLine(
-                        $"{ "BookingId",-8}| { "CustomerId",-10} | { "TrainNo",-6} |{ "TrainName",-17} | { "DOJ",-9}| { "Source",-10}| { "Dest",-10}| { "Class",-8}| { "BookingDate",-13}| { "Passengers",-8}| { "NetCost",-8}");
+                        $"{ "BookingId",-8}| { "CustomerId",-10} | { "TrainNo",-8} |{ "TrainName",-20} | { "DOJ",-11}| { "Source",-14}| { "Dest",-12}| { "Class",-8}| { "BookingDate",-15}| { "Passengers",-10}| { "NetCost",-10}");
 
-                    Console.WriteLine(new string('-', 130));
+                    Console.WriteLine(new string('-', 150));
                     while (reader.Read())
                     {
                         Console.WriteLine(
-                            $"{reader["BookingId"],-9}| {reader["CustomerId"],-11}| {reader["TrainNo"],-8}| {reader["TrainName"],-15}| {Convert.ToDateTime(reader["DateOfJourney"]).ToString("yyyy-MM-dd"),-11}| {reader["Source"],-10}| {reader["Destination"],-10}| {reader["Class"],-8}| {Convert.ToDateTime(reader["BookingDate"]).ToString("yyyy-MM-dd"),-13}| {reader["No_of_Passengers"],-6}| {reader["TotalCost"],-8}");
+                            $"{reader["BookingId"],-9}| {reader["CustomerId"],-10}| {reader["TrainNo"],-10}| {reader["TrainName"],-21}| {Convert.ToDateTime(reader["DateOfJourney"]).ToString("yyyy-MM-dd"),-12}| {reader["Source"],-14}| {reader["Destination"],-12}| {reader["Class"],-8}| {Convert.ToDateTime(reader["BookingDate"]).ToString("yyyy-MM-dd"),-15}| {reader["No_of_Passengers"],-10}| {reader["TotalCost"],-10}");
                     }
 
                     reader.Close();
