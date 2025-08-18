@@ -10,7 +10,7 @@ namespace Assignement_1
         {
             { "Laptop", "images/laptop.jpg" },
             { "Smartphone", "images/smartphone.jpg" },
-            { "Headphones", "images/headphones.jpg" }
+            { "Headphones", "images/headphones.png" }
         };
 
         Dictionary<string, string> productPrices = new Dictionary<string, string>()
