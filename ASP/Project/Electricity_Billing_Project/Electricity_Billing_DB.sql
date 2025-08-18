@@ -3,15 +3,14 @@ create database Electricity_DB
 use Electricity_DB
 
 
-CREATE TABLE ElectricityBill (
-    consumer_number VARCHAR(20) PRIMARY KEY,
-    consumer_name VARCHAR(50),
-    units_consumed INT,
-    bill_amount FLOAT
+create table ElectricityBill (
+    consumer_number varchar(20) primary key,
+    consumer_name varchar(50),
+    units_consumed int,
+    bill_amount float
 );
-
-INSERT INTO ElectricityBill (consumer_number, consumer_name, units_consumed, bill_amount)
-VALUES ('EB12345', 'Test User', 250, 225.0);
+insert into ElectricityBill (consumer_number, consumer_name, units_consumed, bill_amount)
+values ('EB12345', 'Test User', 250, 225.0);
 
 alter table ElectricityBill add Date datetime;
 
