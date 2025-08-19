@@ -22,9 +22,6 @@ namespace Electricity_Billing_Project
         {
             try
             {
-                if (!System.Text.RegularExpressions.Regex.IsMatch(txtConsumerNumber.Text, @"^EB\d{5}$"))
-                    throw new FormatException("Invalid Consumer Number");
-
                 int units = int.Parse(txtUnits.Text);
                 string validationMsg =ValidateUnitsConsumed(units);
                 if (validationMsg != "Valid")
@@ -47,10 +44,6 @@ namespace Electricity_Billing_Project
                 txtConsumerNumber.Text= "";
                 txtConsumerName.Text = "";
                 txtUnits.Text= "";
-            }
-            catch (FormatException ex)
-            {
-                lblResult.Text = ex.Message;
             }
             catch (Exception ex)
             {

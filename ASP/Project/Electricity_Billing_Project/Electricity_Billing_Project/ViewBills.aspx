@@ -26,7 +26,7 @@
             color: #2e7d32;
             margin-bottom: 20px;
         }
-        .form-section label {
+        #lblN {
             display: block;
             margin-top: 10px;
             font-weight: bold;
@@ -67,7 +67,9 @@
             <div class="form-section">
                 <h2>Retrieve Last N Bills</h2>
                 <asp:Label ID="lblN" runat="server" Text="Enter N:" />
-                <asp:TextBox ID="txtN" runat="server" /><br />
+                <asp:TextBox ID="txtN" runat="server" />
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtN" ErrorMessage="Enter N values it is required" ForeColor="Red"></asp:RequiredFieldValidator>
+                <br />
                 <asp:Button ID="btnRetrieve" runat="server" Text="Retrieve" OnClick="btnRetrieve_Click" CssClass="btn-retrieve" /><br /><br />
                 <div class="gridview">
                     <asp:GridView ID="gvBills" runat="server" AutoGenerateColumns="true" />

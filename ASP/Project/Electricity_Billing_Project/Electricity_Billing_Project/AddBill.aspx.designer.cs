@@ -42,6 +42,24 @@ namespace Electricity_Billing_Project
         protected global::System.Web.UI.WebControls.TextBox txtConsumerNumber;
 
         /// <summary>
+        /// custno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator custno;
+
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+
+        /// <summary>
         /// lblConsumerName control.
         /// </summary>
         /// <remarks>
@@ -60,6 +78,15 @@ namespace Electricity_Billing_Project
         protected global::System.Web.UI.WebControls.TextBox txtConsumerName;
 
         /// <summary>
+        /// custname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator custname;
+
+        /// <summary>
         /// lblUnits control.
         /// </summary>
         /// <remarks>
@@ -76,6 +103,15 @@ namespace Electricity_Billing_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtUnits;
+
+        /// <summary>
+        /// units control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator units;
 
         /// <summary>
         /// btnCalculate control.

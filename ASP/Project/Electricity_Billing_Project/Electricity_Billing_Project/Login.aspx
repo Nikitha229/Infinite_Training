@@ -68,9 +68,12 @@
             <div class="login-section">
                 <h2>Admin Login</h2>
                 <asp:Label ID="lblUser" runat="server" Text="Username:" />
-                <asp:TextBox ID="txtUser" runat="server" /><br/>
+                <asp:TextBox ID="txtUser" runat="server" />
+                <asp:RequiredFieldValidator ID="username" runat="server" ErrorMessage="Enter username" ForeColor="Red" ControlToValidate="txtUser"></asp:RequiredFieldValidator>
+                <br/>
                 <asp:Label ID="lblPass" runat="server" Text="Password:" />
                 <asp:TextBox ID="txtPass" runat="server" TextMode="Password" />
+                <asp:RequiredFieldValidator ID="pswd" runat="server" ErrorMessage="Enter Password" ForeColor="Red" ControlToValidate="txtPass"></asp:RequiredFieldValidator>
                 <br />
                 <br />
                 <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" CssClass="btn-login" />

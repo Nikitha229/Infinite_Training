@@ -42,6 +42,15 @@ namespace Electricity_Billing_Project
         protected global::System.Web.UI.WebControls.TextBox txtUser;
 
         /// <summary>
+        /// username control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator username;
+
+        /// <summary>
         /// lblPass control.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Electricity_Billing_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtPass;
+
+        /// <summary>
+        /// pswd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator pswd;
 
         /// <summary>
         /// btnLogin control.

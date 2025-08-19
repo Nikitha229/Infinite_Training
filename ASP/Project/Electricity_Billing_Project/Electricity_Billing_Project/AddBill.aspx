@@ -17,8 +17,8 @@
             padding: 50px;
         }
         .form-section {
-            width: 45%;
-            padding: 30px;
+            width: 50%;
+            padding: 20px;
             border-radius: 10px;
             margin-top: 50px;
         }
@@ -53,7 +53,7 @@
             background-color: #1b5e20;
         }
         .image-section {
-            width: 50%;
+            width: 45%;
             padding: 20px;
         }
     </style>
@@ -64,11 +64,18 @@
             <div class="form-section">
                 <h2>Add Electricity Bill</h2>
                 <asp:Label ID="lblConsumerNumber" runat="server" Text="Consumer Number:" />
-                <asp:TextBox ID="txtConsumerNumber" runat="server" /><br />
+                <asp:TextBox ID="txtConsumerNumber" runat="server" />
+                <asp:RequiredFieldValidator ID="custno" runat="server" ErrorMessage="Enter Customer number " ForeColor="Red" ControlToValidate="txtConsumerNumber"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtConsumerNumber" Display="Dynamic" ErrorMessage="Entered Customer number should be in format (EBXXXXX)" ForeColor="Red" ValidationExpression="^EB\d{5}$"></asp:RegularExpressionValidator>
+                <br />
                 <asp:Label ID="lblConsumerName" runat="server" Text="Consumer Name:" />
-                <asp:TextBox ID="txtConsumerName" runat="server" /><br />
+                <asp:TextBox ID="txtConsumerName" runat="server" />
+                <asp:RequiredFieldValidator ID="custname" runat="server" ErrorMessage="Customer name is required" ForeColor="Red" ControlToValidate="txtConsumerName"></asp:RequiredFieldValidator>
+                <br />
                 <asp:Label ID="lblUnits" runat="server" Text="Units Consumed:" />
-                <asp:TextBox ID="txtUnits" runat="server" /><br /><br />
+                <asp:TextBox ID="txtUnits" runat="server" />
+                <asp:RequiredFieldValidator ID="units" runat="server" ErrorMessage="Enter number of units" ForeColor="Red" ControlToValidate="txtUnits"></asp:RequiredFieldValidator>
+                <br /><br />
                 <asp:Button ID="btnCalculate" runat="server" Text="Calculate & Save" OnClick="btnCalculate_Click" CssClass="btn-submit" />
                 &nbsp;&nbsp;&nbsp;
                 <asp:Button ID="btnRetrieve" runat="server" Text="View Bills" OnClick="btnRetrieve_Click" CssClass="btn-submit" />              

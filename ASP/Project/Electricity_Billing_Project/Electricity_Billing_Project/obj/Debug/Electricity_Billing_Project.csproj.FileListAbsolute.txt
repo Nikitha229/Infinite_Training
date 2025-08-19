@@ -67,7 +67,6 @@ C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\bin\Antlr3.Runtime.pdb
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\bin\Microsoft.AspNet.FriendlyUrls.xml
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\obj\Debug\Electricity_Billing_Project.csproj.AssemblyReference.cache
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\obj\Debug\Electricity_Billing_Project.csproj.CoreCompileInputs.cache
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\obj\Debug\Electricity_Billing_Project.csproj.CopyComplete
 C:\Infinite-Training\ASP\Project\Electricity_Billing_Project\Electricity_Billing_Project\obj\Debug\Electricity_Billing_Project.dll

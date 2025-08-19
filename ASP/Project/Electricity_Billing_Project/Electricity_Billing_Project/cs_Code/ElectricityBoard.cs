@@ -31,7 +31,7 @@ namespace Electricity_Billing_Project.Code
             DBConnection db = new DBConnection();
             using (SqlConnection conn = db.GetConnection())
             {
-                string query = "INSERT INTO ElectricityBill VALUES (@num, @name, @units, @amount,getdate())";
+                string query = "insert into ElectricityBill values (@num, @name, @units, @amount,getdate())";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@num", ebill.ConsumerNumber);
                 cmd.Parameters.AddWithValue("@name", ebill.ConsumerName);
@@ -48,7 +48,7 @@ namespace Electricity_Billing_Project.Code
             DBConnection db = new DBConnection();
             using (SqlConnection conn = db.GetConnection())
             {
-                string query = $"SELECT TOP {n} * FROM ElectricityBill order by date desc";
+                string query = $"select top {n} * from ElectricityBill order by date desc";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 conn.Open();
                 SqlDataReader reader = cmd.ExecuteReader();
