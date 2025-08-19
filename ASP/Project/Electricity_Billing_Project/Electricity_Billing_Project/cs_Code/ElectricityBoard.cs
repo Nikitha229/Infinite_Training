@@ -56,7 +56,7 @@ namespace Electricity_Billing_Project.Code
                 {
                     ElectricityBill eb = new ElectricityBill
                     {
-                        ConsumerNumber = reader["consumer_number"].ToString(),
+                        ConsumerNumber =reader["consumer_number"].ToString(),
                         ConsumerName = reader["consumer_name"].ToString(),
                         UnitsConsumed = Convert.ToInt32(reader["units_consumed"]),
                         BillAmount = Convert.ToDouble(reader["bill_amount"])
