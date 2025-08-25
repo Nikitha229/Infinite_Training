@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Coding_Challenge_9_Question_2.Models.Movies>
+
+@{
+    ViewBag.Title = "Movies By Director";
+}
+
+<h2>Find Movies by Director</h2>
+
+@using (Html.BeginForm("MoviesByDirector", "Movies", FormMethod.Get))
+{
+    <div class="form-group">
+        <label for="directorName">Enter Director Name:</label>
+        <input type="text" name="directorName" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+}
+
+<hr />
+
+@if (Model != null && Model.Any())
+{
+    <h3>Movies directed by @Request.QueryString["directorName"]</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Movie Name</th>
+                <th>Director Name</th>
+                <th>Date of Release</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var movie in Model)
+            {
+                <tr>
+                    <td>@movie.MovieName</td>
+                    <td>@movie.DirectorName</td>
+                    <td>@movie.DateofRelease.ToShortDateString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Request.QueryString["directorName"] != null)
+{
+    <p>No movies found for director "@Request.QueryString["directorName"]".</p>
+}

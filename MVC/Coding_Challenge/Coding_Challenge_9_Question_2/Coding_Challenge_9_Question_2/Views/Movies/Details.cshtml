@@ -1,0 +1,50 @@
+﻿@model Coding_Challenge_9_Question_2.Models.Movies
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Movies</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MovieName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MovieName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DirectorName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DirectorName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateofRelease)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateofRelease)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

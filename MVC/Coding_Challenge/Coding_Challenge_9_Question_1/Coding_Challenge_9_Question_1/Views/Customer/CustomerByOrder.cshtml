@@ -1,0 +1,51 @@
+﻿@model Coding_Challenge_9_Question_1.Models.Customer
+
+@{
+    ViewBag.Title = "CustomerByOrder";
+}
+
+<h2>Find Customer by Order ID</h2>
+
+<!-- Form to enter Order ID -->
+@using (Html.BeginForm("CustomerByOrder", "Customer", FormMethod.Get))
+{
+    <div class="form-group">
+        <label for="orderId">Order ID:</label>
+        <input type="number" name="orderId" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+}
+
+<hr />
+
+<!-- Display customer details if available -->
+@if (Model != null)
+{
+    <h3>Customer Details</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.CustomerID)</th>
+                <th>@Html.DisplayNameFor(model => model.CompanyName)</th>
+                <th>@Html.DisplayNameFor(model => model.ContactName)</th>
+                <th>@Html.DisplayNameFor(model => model.City)</th>
+                <th>@Html.DisplayNameFor(model => model.Country)</th>
+                <th>@Html.DisplayNameFor(model => model.Phone)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Html.DisplayFor(model => model.CustomerID)</td>
+                <td>@Html.DisplayFor(model => model.CompanyName)</td>
+                <td>@Html.DisplayFor(model => model.ContactName)</td>
+                <td>@Html.DisplayFor(model => model.City)</td>
+                <td>@Html.DisplayFor(model => model.Country)</td>
+                <td>@Html.DisplayFor(model => model.Phone)</td>
+            </tr>
+        </tbody>
+    </table>
+}
+else if (Request.QueryString["orderId"] != null)
+{
+    <p>No customer found for Order ID @Request.QueryString["orderId"].</p>
+}

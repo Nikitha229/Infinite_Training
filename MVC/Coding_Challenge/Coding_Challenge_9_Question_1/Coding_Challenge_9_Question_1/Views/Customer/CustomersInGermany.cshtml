@@ -1,0 +1,50 @@
+﻿@model IEnumerable<Coding_Challenge_9_Question_1.Models.Customer>
+
+@{
+    ViewBag.Title = "CustomersByCountry";
+}
+
+<h2>Find Customers by Country</h2>
+
+<!-- Form to enter city name -->
+@using (Html.BeginForm("CustomersInGermany", "Customer", FormMethod.Get))
+{
+    <div class="form-group">
+        <label for="city">Country Name:</label>
+        <input type="text" name="country" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+}
+
+<hr />
+
+<!-- Display results if any -->
+@if (Model != null && Model.Any())
+{
+    <h3>Customers in @Request.QueryString["country"]</h3>
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().CustomerID)</th>
+                <th>@Html.DisplayNameFor(model => model.First().CompanyName)</th>
+                <th>@Html.DisplayNameFor(model => model.First().ContactName)</th>
+                <th>@Html.DisplayNameFor(model => model.First().City)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.CustomerID)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CompanyName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.ContactName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.City)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Request.QueryString["country"] != null)
+{
+    <p>No customers found in @Request.QueryString["country"].</p>
+}
